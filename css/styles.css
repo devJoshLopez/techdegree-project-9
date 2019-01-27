@@ -191,7 +191,7 @@ section .content {
 
 section.header {
 	display: block;
-	background-image: url("/images/lobster-nebula.jpg");
+	background-image: url("images/lobster-nebula.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
