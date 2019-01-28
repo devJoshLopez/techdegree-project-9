@@ -91,7 +91,7 @@ h2::before,
 h3::before {
 	color: #06f5f0;
 	clip-path: polygon(0 20%, 100% 42%, 100% 0%, 0% 0%);
-	transform: translateX(1%);
+	transform: translateX(0.04em);
 }
 
 h1::after,
@@ -99,14 +99,22 @@ h2::after,
 h3::after {
 	color: #f8249d;
 	clip-path: polygon(0 75%, 100% 90%, 100% 100%, 0% 100%);
-	transform: translateX(1%);
+	transform: translateX(0.04em);
+}
+
+.js-tilt {
+	position: relative;
+	overflow: hidden;
+	height: 420px;
+	width: 420px;
+	transform-style: preserve-3d;
 }
 
 .page-title-container {
 	position: absolute;
-	bottom: 42%;
+	top: 50%;
 	left: 50%;
-	transform: translate(-50%);
+	transform: translate(-50%, -50%);
 	z-index: 5;
 }
 
@@ -119,14 +127,24 @@ h3::after {
 	top: 50%;
 	left: 50%;
 	text-align: center;
-	transform: translate(-50%, -50%);
-	min-width: 90vw;
+}
+
+#glowing-purple-triangle {
+	transform: translateZ(50px) translateY(-50%) translateX(-50%);
+}
+#glowing-blue-triangle {
+	transform: translateZ(50px) translateY(-50%) translateX(-50%);
+}
+
+#solid-triangle {
+	transform: translateZ(50px) translateY(-50%) translateX(-50%);
 }
 
 .hello-world-emojis {
 	font-size: 3em;
 	z-index: 9;
-	top: -100px;
+	top: 14%;
+	transform: translateZ(50px) translateY(-50%) translateX(-50%);
 }
 
 #page-title {
@@ -135,11 +153,12 @@ h3::after {
 	margin: 0;
 	z-index: 10;
 	filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.8));
+	transform: translateZ(50px) translateY(-50%) translateX(-50%);
 }
 
 #glowing-blue-triangle {
 	fill: transparent;
-	top: -42px;
+	top: 42%;
 	filter: drop-shadow(0 1px 3px rgba(6, 245, 240, 0.8));
 }
 
@@ -180,6 +199,15 @@ img {
 	height: auto;
 	overflow: hidden;
 	box-sizing: content-box;
+}
+
+/* glitch elem must have absolute position */
+.glitch-img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
 }
 
 section {
@@ -303,8 +331,16 @@ section.header .header-bottom {
 	filter: drop-shadow(0 1px 3px rgba(170, 88, 255, 0.8));
 }
 
+.portfolio-item-image-wrapper {
+	position: relative;
+	width: 100%;
+	display: block;
+	overflow: hidden;
+}
+
 .portfolio-item .portfolio-item-image {
 	width: 100%;
+	height: 100%;
 	background-size: cover;
 	background-position: center;
 }
@@ -337,7 +373,7 @@ section.header .header-bottom {
 	.hello-world-emojis {
 		font-size: 4em;
 		z-index: 9;
-		top: -142px;
+		top: 14%;
 	}
 }
 @media screen and (min-width: 1025px) {

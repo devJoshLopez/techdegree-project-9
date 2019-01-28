@@ -21,21 +21,24 @@
     </div>
 
     <div class="page-title-container">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 855 744" id="glowing-purple-triangle">
-        <path class="b" d="M42 255L707 18 538 624z" />
-        <path class="purple-line" d="M683 43L76 260l453 337L683 43m24-25L538 624 42 255 707 18z" />
-      </svg>
+      <div class="js-tilt" data-tilt>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 855 744" id="glowing-purple-triangle">
+          <path class="b" d="M42 255L707 18 538 624z" />
+          <path class="purple-line" d="M683 43L76 260l453 337L683 43m24-25L538 624 42 255 707 18z" />
+        </svg>
 
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 691 725" id="glowing-blue-triangle">
-        <path d="M639 448L218 695l-1-578z" />
-        <path class="blue-line" d="M234 667l376-221-377-297 1 518m-16 28l-1-578 422 331-421 247z" />
-      </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 691 725" id="glowing-blue-triangle">
+          <path d="M639 448L218 695l-1-578z" />
+          <path class="blue-line" d="M234 667l376-221-377-297 1 518m-16 28l-1-578 422 331-421 247z" />
+        </svg>
 
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 752 603" id="solid-triangle">
-        <path d="M26 102l700-82-301 552z" />
-      </svg>
-      <div class="hello-world-emojis">👋🌎</div>
-      <h1 id="page-title" onkeypress="return (this.innerText.length <= 12)" contenteditable data-heading="Hello World">Hello World</h1>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 752 603" id="solid-triangle">
+          <path d="M26 102l700-82-301 552z" />
+        </svg>
+        <div class="hello-world-emojis">👋🌎</div>
+        <h1 id="page-title" onkeypress="return (this.innerText.length <= 12)" contenteditable data-heading="Hello World">Hello World</h1>
+      </div>
+
     </div>
 
     <div class="header-bottom">
@@ -55,7 +58,9 @@
       <div class="portfolio-wrapper">
 
         <div class="portfolio-item">
-          <div class="portfolio-item-image" style="background-image: url(./images/project-1.jpg)"></div>
+          <div class="portfolio-item-image-wrapper">
+            <div class="portfolio-item-image" style="background-image: url(./images/project-1.jpg)"></div>
+          </div>
           <div class="portfolio-item-content">
             <h3 data-heading="My Personal Profile Page">My Personal Profile Page</h3>
             <p>Customize a personal online profile by adding graphics, customizing text, and improving the look of a web page using Cascading Style Sheets, the formatting language of the web. Share your finished project on GitHub, a website used by teams of programmers to share and work on programming code.</p>
@@ -74,7 +79,9 @@
         </div>
 
         <div class="portfolio-item">
-          <div class="portfolio-item-image" style="background-image: url(./images/project-4.jpg)"></div>
+          <div class="portfolio-item-image-wrapper">
+            <div class="portfolio-item-image" style="background-image: url(./images/project-4.jpg)"></div>
+          </div>
           <div class="portfolio-item-content">
             <h3 data-heading="Web Style Guide">Web Style Guide</h3>
             <p>Sass is an important tool in a modern Front End Web Developer’s toolbox. It's used by many developers to make styling web pages with CSS easier and faster. Create a style guide that can act as your own personal and custom Bootstrap that you can drop into any of your projects to speed up styling, layout and development in general.</p>
@@ -91,7 +98,9 @@
         </div>
 
         <div class="portfolio-item">
-          <div class="portfolio-item-image" style="background-image: url(./images/project-5.jpg)"></div>
+          <div class="portfolio-item-image-wrapper">
+            <div class="portfolio-item-image" style="background-image: url(./images/project-5.jpg)"></div>
+          </div>
           <div class="portfolio-item-content">
             <h3 data-heading="An Interactive Photo Gallery">An Interactive Photo Gallery</h3>
             <p>Interactive image galleries are a common feature of many websites, from photo sites to e-commerce applications. Use HTML, CSS and the popular programming language JavaScript to create an interactive, searchable gallery of photos.</p>
@@ -107,7 +116,9 @@
         </div>
 
         <div class="portfolio-item">
-          <div class="portfolio-item-image" style="background-image: url(./images/project-6.jpg)"></div>
+          <div class="portfolio-item-image-wrapper">
+            <div class="portfolio-item-image" style="background-image: url(./images/project-6.jpg)"></div>
+          </div>
           <div class="portfolio-item-content">
             <h3 data-heading="Game Show App">Game Show App</h3>
             <p>In this project, you'll create a browser version of “Wheel of Success”, a word guessing game. You’ll use Javascript to come up with a random phrase that players will try to guess by entering different letters into the program.</p>
@@ -124,9 +135,11 @@
         </div>
 
         <div class="portfolio-item">
-          <div class="portfolio-item-image" style="background-image: url(./images/project-7.jpg)"></div>
+          <div class="portfolio-item-image-wrapper">
+            <div class="portfolio-item-image" style="background-image: url(./images/project-7.jpg)"></div>
+          </div>
           <div class="portfolio-item-content">
-            <h3 data-heading="Game Show App">WebApp Dashboard</h3>
+            <h3 data-heading="WebApp Dashboard">WebApp Dashboard</h3>
             <p>Build an interactive dashboard for a web application using advanced web techniques including SVG graphics and JavaScript programming. The project involves creating tables, charts, graphics and other user interface components in a manner that promotes interactivity and usability.</p>
             <div><b>Grade:</b> Exceeds Expectations</div>
             <div><b>Requirments:</b></div>
@@ -144,7 +157,9 @@
         </div>
 
         <div class="portfolio-item">
-          <div class="portfolio-item-image" style="background-image: url(./images/project-8.jpg)"></div>
+          <div class="portfolio-item-image-wrapper">
+            <div class="portfolio-item-image" style="background-image: url(./images/project-8.jpg)"></div>
+          </div>
           <div class="portfolio-item-content">
             <h3 data-heading="Use an API to Create an Employee Directory">Use an API to Create an Employee Directory</h3>
             <p>Many sites — Twitter, Facebook, IMDB, and Wikipedia to name a few — offer a vast sea of data that you can access and display on your own web pages. Using JavaScript, you’ll create an employee directory by communicating with a third-party API (Application Programming Interface).</p>
@@ -187,6 +202,8 @@
 
   <!-- <script src="https://cdn.jsdelivr.net/kute.js/1.6.5/kute.min.js"></script> -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.rawgit.com/hmongouachon/mgGlitch/master/src/mgGlitch.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
   <!-- <script src="https://cdn.jsdelivr.net/kute.js/1.6.5/kute-jquery.min.js"></script> -->
   <script src="js/scripts.js"></script>
 </body>
