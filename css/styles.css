@@ -130,10 +130,10 @@ h3::after {
 }
 
 #glowing-purple-triangle {
-	transform: translateZ(50px) translateY(-50%) translateX(-50%);
+	transform: translateZ(10px) translateY(-50%) translateX(-50%);
 }
 #glowing-blue-triangle {
-	transform: translateZ(50px) translateY(-50%) translateX(-50%);
+	transform: translateZ(20px) translateY(-50%) translateX(-50%);
 }
 
 #solid-triangle {
@@ -144,7 +144,7 @@ h3::after {
 	font-size: 3em;
 	z-index: 9;
 	top: 14%;
-	transform: translateZ(50px) translateY(-50%) translateX(-50%);
+	transform: translateZ(60px) translateY(-50%) translateX(-50%);
 }
 
 #page-title {
@@ -153,7 +153,7 @@ h3::after {
 	margin: 0;
 	z-index: 10;
 	filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.8));
-	transform: translateZ(50px) translateY(-50%) translateX(-50%);
+	transform: translateZ(150px) translateY(-50%) translateX(-50%);
 }
 
 #glowing-blue-triangle {
@@ -360,12 +360,6 @@ section.header .header-bottom {
 		height: 100vh;
 		min-height: 300px;
 		max-height: 500px;
-	}
-	#page-title,
-	#glowing-purple-triangle,
-	#glowing-blue-triangle,
-	#solid-triangle {
-		min-width: 420px;
 	}
 	h1 {
 		font-size: 6em;
