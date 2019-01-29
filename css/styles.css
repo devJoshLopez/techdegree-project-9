@@ -148,7 +148,6 @@ h3::after {
 
 #page-title {
 	max-width: 90vw;
-	min-width: 100% !important;
 	margin: 0;
 	z-index: 10;
 	filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.8));
